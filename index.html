@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="selection">
+        <h2>Tres en raya</h2>
+        <p>Selecciona tu figura</p>
+        <div class="players">
+            <button class="player" onclick="playerSelect('X')">X</button>
+            <button class="player" onclick="playerSelect('O')">O</button>
+        </div>
+    </div>
+    <!-- El tablero de juego -->
+    <div class="play-board">
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+        <!-- Boton de reset -->
+        <button class="reset" onclick="startGame()">Reset</button>
+    </div>
+    <!-- Ganador -->
+    <div class="winner">
+        <h3></h3>
+        <button class="reset" onclick="startGame()">Juega de nuevo</button>
+    </div>
+    <script src="./js/funcionalidad.js"></script>
+</body>
+</html>
